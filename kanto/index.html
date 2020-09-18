@@ -165,7 +165,27 @@
                     <tr>
                         <td>{{ article.name }}</td>
                         <td><a href='{% url "lunchapp:detail" shop.pk %}'>{{ content.name }}</a></td>
-                        <td>{{ date }}</td>
+                        <td>{{ day.date }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ article.name }}</td>
+                        <td><a href='{% url "lunchapp:detail" shop.pk %}'>{{ content.name }}</a></td>
+                        <td>{{ day.date }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ article.name }}</td>
+                        <td><a href='{% url "lunchapp:detail" shop.pk %}'>{{ content.name }}</a></td>
+                        <td>{{ day.date }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ article.name }}</td>
+                        <td><a href='{% url "lunchapp:detail" shop.pk %}'>{{ content.name }}</a></td>
+                        <td>{{ day.date }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ article.name }}</td>
+                        <td><a href='{% url "lunchapp:detail" shop.pk %}'>{{ content.name }}</a></td>
+                        <td>{{ day.date }}</td>
                     </tr>
                 </table>
                 <article>
@@ -173,7 +193,7 @@
                 <div class="clear"></div>
                 <br />
                 <h2>営業カレンダー</h2>
-                <div id="business-calendar">{{ business-calendar }}</div>
+                <div id="business-calendar">{{ business-calendar.object }}</div>
             </div>
             <!--/#main-->
         </div>
