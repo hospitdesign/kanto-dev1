@@ -1,0 +1,294 @@
+﻿
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: fot-tsukuardgothic-std, sans-serif,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+    color: #585858;
+    margin: 0;
+    font-size:1rem;
+}
+/*main
+//////////////////////////////////////////////////////////////*/
+#main {
+    width: 100%; /*ブロックの幅*/
+}
+    /*mainコンテンツのh2タグ設定*/
+    #main h2 {
+        clear: both;
+        margin-bottom: 20px;
+        padding: 10px 15px; /*上下、左右への余白*/
+        color: #FFF; /*文字色*/
+        font-size: 1.2rem; /*文字サイズ*/
+        background: #cc0000; /*背景色（古いブラウザ用）*/
+        background: linear-gradient(#ff7700, #cc0000 60%); /*グラデーション*/
+        box-shadow: 1px 2px 4px rgba(0,0,0,0.3); /*影の設定*/
+        border-radius: 10px;
+    }
+        /*h2タグの１文字目への追加設定*/
+        #main h2::first-letter {
+            border-left: 3px solid #fff; /*左の線の幅、線種、色*/
+            padding-left: 10px; /*線とテキストとの余白*/
+        }
+@media screen and (max-width:480px) {
+    /*mainコンテンツのh2タグ設定*/
+    #main h2 {
+        font-size: 0.9rem; /*文字サイズ*/
+    }
+}
+    .calen_near {
+        float: left;
+        width: 30%;
+        font-weight: normal;
+    }
+
+    .calen_next {
+        float: right;
+        width: 30%;
+        font-weight: normal;
+    }
+
+    .calen_a {
+        margin: 0 auto;
+        width: 98%;
+        display: inline-block;
+        border-left: 1px solid #CCC;
+    }
+
+    .calen_hed {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0px 10px;
+        font-size: 110%;
+    }
+
+    .calen_a .calen_m {
+        float: left;
+        width: 3.225%;
+    }
+
+        .calen_a .calen_m .calen_w {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            border-top: 1px solid #CCC;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+        .calen_a .calen_m .calen_wr {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            background: #F5A9BC;
+            border-top: 1px solid #CCC;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+        .calen_a .calen_m .calen_wa {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            color: red;
+            border-top: 1px solid #CCC;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+        .calen_a .calen_m .calen_wb {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            color: #0101DF;
+            border-top: 1px solid #CCC;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+        .calen_a .calen_m .calen_d {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+        .calen_a .calen_m .calen_dr {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            background: #F5A9BC;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+        .calen_a .calen_m .calen_da {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            color: red;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+        .calen_a .calen_m .calen_db {
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+            color: #0101DF;
+            border-right: 1px solid#CCC;
+            border-bottom: 1px solid#CCC;
+        }
+
+    .calen_com {
+        float: right;
+        margin-top: 5px;
+        font-weight: normal;
+    }
+
+    .calen_red {
+        float: left;
+        margin-top: 5px;
+        width: 25px;
+        background: #ff8800;
+        color: #F5A9BC;
+    }
+
+    .calen_nml {
+        float: left;
+        margin-top: 5px;
+        padding-left: 5px;
+        font-size:0.85rem;
+    }
+
+.calen_near {
+    float: left;
+    width: 30%;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+
+        .calen_near ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .calen_near li {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            width: 86px;
+        }
+
+            .calen_near li a {
+                display: block;
+                text-decoration: none;
+                color: #333;
+                margin: 1px;
+            }
+
+                .calen_near li a:hover {
+                    color: #F5A9BC;
+                }
+
+.calen_foot {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px 10px;
+    font-size: 0.85rem;
+}
+
+.calen_next {
+    float: right;
+    width: 30%;
+    font-weight: normal;
+    font-size: 0.85rem;
+}
+
+        .calen_next ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .calen_next li {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            width: 86px;
+        }
+
+            .calen_next li a {
+                display: block;
+                text-decoration: none;
+                color: #333;
+                margin: 1px;
+            }
+
+                .calen_next li a:hover {
+                    color: #F5A9BC;
+                }
+
+/* レスポンシブ
+/////////////////////////////////////////////////////*/
+    .spcalen_m {
+        width: 99%;
+        display: table;
+        border-collapse: collapse;
+    }
+
+    .spcalen_dr {
+        width: 10%;
+        display: table-cell;
+        text-align: center;
+        border: 1px solid #6E6E6E;
+        border-top: 1px solid #FFFFFF;
+        border-collapse: collapse;
+    }
+
+    .spcalen_wa {
+        width: 10%;
+        display: table-cell;
+        text-align: center;
+        background-color: #cc0000;
+        color: #FFFFFF;
+        border: 1px solid #6E6E6E;
+        border-collapse: collapse;
+    }
+
+    .spcalen_wb {
+        width: 10%;
+        display: table-cell;
+        text-align: center;
+        background-color: #0099FF;
+        color: #FFFFFF;
+        border: 1px solid #6E6E6E;
+        border-collapse: collapse;
+    }
+
+.spcalen_wc {
+    width: 10%;
+    display: table-cell;
+    background-color: #bcbcbc;
+    color: #FFFFFF;
+    text-align: center;
+    border: 1px solid #6E6E6E;
+    border-collapse: collapse;
+}
+
+.spcalen_wd {
+    width: 10%;
+    display: table-cell;
+    text-align: center;
+    color:#fff;
+    background-color: #ff8800;
+    border: 1px solid #6E6E6E;
+    border-top: 1px solid #FFFFFF;
+    border-collapse: collapse;
+}
